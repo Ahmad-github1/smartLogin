@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+
+  <!--link local bootstrap.min.css -->
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <!--link my main css -->
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+
+  <div class="container text-center p-5 w-75 my-5 boxShadowBlue">
+
+    <h1 class="text-primary">Smart Login System</h1>
+
+    <div class="form-floating mb-3">
+      <input oninput="validateName ()" type="text" class="form-control" id="nameInput" placeholder="">
+      <label for="emailInput"> Enter your name</label>
+    </div>
+    <p id="nameMsg1" class="alert alert-danger d-none">
+      this name already in use !
+    </p>
+    <p id="nameMsg2" class="alert alert-danger d-none">
+      should be only letters 1 - 12 characters
+    </p>
+
+
+    <div class="form-floating mb-3">
+      <input oninput="ValidateEmail ()" type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+      <label for="emailInput"> Enter your email address</label>
+    </div>
+    <p id="mailMsg1" class="alert alert-danger d-none">
+      this email already in use !
+    </p>
+    <p id="mailMsg2" class="alert alert-danger d-none">
+      invalid email , email should only contain latin letters, numbers, '@' and '.'
+      (ex: mail@gmail.com)
+    </p>
+
+
+    <div class="form-floating">
+      <input oninput="validatePassword ()" type="password" class="form-control" id="passwordInput" placeholder="Password">
+      <label for="passwordInput">Enter your password</label>
+    </div>
+    <p id="passMsg" class="alert alert-danger d-none">
+      Minimum eight characters, at least one upper case English letter, one lower case English letter, one number and
+      one special character.
+    </p>
+
+
+    <div id="ifSuccess" class="mt-4 d-none mybox">
+      <span class="text-success fs-4">Success</span>
+    </div>
+
+    <button onclick="signUp ()" type="button" class="btn btn-outline-primary w-100 my-3">Sign Up</button>
+    <p class="text-white">already have an account ? 
+      <a href="./index.html">sign in</a> 
+    </p>
+  </div>
+
+  
+  <!--link local bootstrap.bundle.min.js-->
+  <script src="./bootstrap.bundle.min.js"></script>
+  <!--link my main jS-->
+  <script src="./main.js"></script>
+</body>
+
+</html>

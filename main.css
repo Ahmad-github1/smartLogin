@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(36, 53, 63);
+}
+
+
+.boxShadowBlue {
+  box-shadow: 0 0 25px rgba(0, 89, 255, 0.9);
+}
+
+.mybox {
+  text-shadow: 0 0 25px #2bff00;
+}

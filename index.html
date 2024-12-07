@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in</title>
+
+  <!--link local bootstrap.min.css -->
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <!--link my main css -->
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+
+  <div class="container text-center p-5 w-75 my-5 boxShadowBlue">
+
+    <h1 class="text-primary">Smart Login System</h1>
+
+
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com">
+      <label for="loginEmail"> Enter your email address</label>
+    </div>
+  
+
+    <div class="form-floating">
+      <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+      <label for="loginPassword">Enter your password</label>
+    </div>
+   
+    <div id="emptyMsg" class="alert alert-danger d-none">"Oops! Looks like you missed some fields. Please fill them in to log in." </div>
+
+    <div id="incorrectMsg" class="alert alert-danger d-none">incorrect Email or Password</div>
+
+    <button onclick="login ()" type="button" class="btn btn-outline-primary w-100 my-3">Login</button>
+    <p class="text-white">Do not have an account ?  
+      <a href="./signup.html">Sign up</a> 
+    </p>
+  </div>
+
+
+  <!--link local bootstrap.bundle.min.js-->
+  <script src="./bootstrap.bundle.min.js"></script>
+  <!--link my main jS-->
+  <script src="./main.js"></script>
+</body>
+
+</html>
